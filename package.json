@@ -43,5 +43,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/verssy/cpp-includes-graph.git"
-  }
+  },
+  "publisher": "verssy"
 }
