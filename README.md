@@ -5,12 +5,12 @@
 This extension is useful if you want to remove some unnecessary header dependencies from your sources (if they were already included in headers above)
 
 As an example, if you have project with such structure:
-
+```
 folder
  |- c.hpp
 main.cpp
 a.hpp
-
+```
 and files consist of:
 
 main.cpp:
@@ -44,10 +44,12 @@ folder/c.hpp:
 ```
 
 Then resulting dependency graph will look something like this:
-\!\[Initial graph\]\(images/initial-graph.png\)
+
+![Initial-Image](https://github.com/verssy/cpp-includes-graph/blob/main/images/initial-graph.png)
 
 So, you can delete `#include <iostream>` from `a.hpp` and `main.cpp` and the program will not have redundant dependencies:
-\!\[Initial graph\]\(images/reduced-graph.png\)
+
+![Initial-Image](https://github.com/verssy/cpp-includes-graph/blob/main/images/reduced-graph.png)
 
 ## Usage
 
